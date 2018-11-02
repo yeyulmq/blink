@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "cmp-tag": "/components/tag/index",
+    "cmp-button": "/components/image-button/index",
+    "cmp-preview":"/components/preview/index"
+  
+  },
+  "backgroundColor": "#f5f5f5"
+}

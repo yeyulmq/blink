@@ -1,0 +1,13 @@
+.container{
+  display: inline;
+  padding:0 10rpx;
+}
+.container image{
+  width : 32rpx;
+  height: 28rpx;
+}
+.container text{
+  font-size:24rpx;
+  color:#bbbbbb;
+  vertical-align: text-top;
+}

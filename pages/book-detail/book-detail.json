@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cmp-tag": "/components/tag/index",
+    "cmp-like":"/components/like/index",
+    "cmp-mask":"/components/mask/index"
+  }
+}

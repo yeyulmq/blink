@@ -1,0 +1,20 @@
+
+  <view class="container" wx:if="{{!showSearch}}">
+    <view class="header" >
+      <view class="box" bindtap='search'>
+        <image src="/images/icon/search.png"/>
+        <text>搜索书籍</text>
+      </view>
+    </view>
+
+    <view class="sub-container">
+      <image src="/images/book/quality.png" class="head-img"/>
+      <view class="books-container">
+        <block wx:key="id" wx:for="{{books}}">
+          <cmp-book book="{{item}}"/>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <cmp-search more="{{more}}" wx:if="{{showSearch}}" bind:onCancel="cancel"/>

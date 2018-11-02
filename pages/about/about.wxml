@@ -1,0 +1,5 @@
+<!--pages/about/about.wxml-->
+<image class="about"  />
+ <image class="vendor" src="/images/my/vendor.png"></image>
+ 
+

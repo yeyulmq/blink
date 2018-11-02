@@ -1,0 +1,6 @@
+<view class="container">
+  <image src="{{img}}" class="classic-img"/> 
+  <image src="{{!playing ? playImage : pauseImage}}" class="player-img" bind:tap="onTap"/>
+  <image src="images/music@tag.png" class="tag"/>
+  <text class="content">{{content}}</text>
+</view>

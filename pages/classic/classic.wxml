@@ -1,0 +1,21 @@
+<!--pages/classic/classic.wxml-->
+<view class="container">
+  <view class="header">
+    <cmp-time index="{{classic.index}}" class="time"/>
+    <view class="like-container">
+      <cmp-like isLike="{{like_status}}" count="{{fav_nums}}" 
+    bind:like = "isLike" class="like" />
+      <cmp-button class="share-btn" open-type="share">
+        <image class="share" slot="img" src="/images/icon/share.png" />
+      </cmp-button>
+    </view>
+    
+    
+  </view>
+  
+  <cmp-movie img="{{classic.image}}" content="{{classic.content}}" hidden="{{classic.type != 100}}"/>
+  <cmp-music img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" wx:if="{{classic.type == 200}}"/>
+  <cmp-essay img="{{classic.image}}" content="{{classic.content}}" hidden="{{classic.type != 300}}"/>
+  <cmp-nav class="nav" title="{{classic.title}}" first="{{first}}" 
+  last="{{last}}" bind:toLeft = "toNext" bind:toRight = "toPrev"/> 
+</view>
